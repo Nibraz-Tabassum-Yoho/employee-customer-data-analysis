@@ -1,13 +1,16 @@
-Orders Data Analysis Project
+Orders Data Analysis
 Project Overview
 
-This project focuses on analyzing orders data to understand sales performance, customer purchasing behavior, and product performance.
+This project analyzes customer orders to understand revenue, customer purchasing behavior, and order patterns.
 
 Dataset
 
-Orders Dataset (data.csv).
+The project uses an orders CSV dataset containing:
 
-Technologies Used
+order_id
+customer_id
+amount
+Technologies
 Python
 Pandas
 NumPy
@@ -16,18 +19,23 @@ Seaborn
 Jupyter Notebook
 Git and GitHub
 Initial Data Analysis
+
+The following checks were performed:
+
 Dataset shape
-Dataset information
-Statistical summary
-Missing value analysis
-Duplicate record analysis
-Business Questions
-Which product generates the highest sales revenue?
-Which month has the highest number of orders?
-Which customers contribute the most to total sales?
-Which product category has the highest sales?
-What is the average order value?
-Project Structure
+Dataset information using info()
+Statistical summary using describe()
+Missing values using isna().sum()
+Duplicate records using duplicated().sum()
+
+Business Questions:
+1.What is the total revenue generated from all orders?
+2.Which customer has placed the highest number of orders?
+3.Which customer has generated the highest revenue?
+4.What is the average order amount?
+5.How many duplicate orders and missing order amounts exist?
+
+Project Structure:
 text
 employee-customer-data-analysis/
 ├── data/
@@ -37,10 +45,12 @@ employee-customer-data-analysis/
 ├── README.md
 └── requirements.txt
 
-Project Status
-Git repository setup
-Feature branch created
-Dataset selected
-Initial data analysis
+Project Progress:
+Repository setup
+Feature branch creation
+Dataset loaded
+Initial data inspection
+Business questions defined
+Data cleaning
 Exploratory data analysis
 Business insights
